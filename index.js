@@ -76,7 +76,8 @@ async function renderGrafica() {
     const monedas = await getMonedas();
     const config = chartConfig(monedas);
     const chartDOM = document.getElementById("myChart")
-    myChart.style.width = '1000px'
+    myChart.style.width = '800px'
+    myChart.style.height = '800px'
     new Chart(chartDOM, config);
 }
 
